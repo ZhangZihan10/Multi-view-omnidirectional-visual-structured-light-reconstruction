@@ -3,10 +3,12 @@ clear
 % Laser Segmentation
 name = "Matlab";
 %a=Client;
-Client = TCPInit('127.0.0.1',55014,name);
+%Client = TCPInit('127.0.0.1',55014,name);
 %Client=a;
-image =ImageReadTCP_One(Client,'Center'); %imread('TestImages/image6.jpg');
-image1 = ImageReadTCP_One1(Client,'Center');%imread('TestImages/image7.jpg');
+image=imread("image.png");
+image1=imread("image1.png");
+%image =ImageReadTCP_One(Client,'Center'); %imread('TestImages/image6.jpg');
+%image1 = ImageReadTCP_One1(Client,'Center');%imread('TestImages/image7.jpg');
 %img = las_segm(image);
 %img1 = las_segm(image1);
 img = LaserFind(image);
